@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<layman>
+	<overlay 
+		type="git"
+		src="git://github.com/jasherai/overlay.git"
+		name="phatforge"
+		contact="overlay@phatforge.com">
+		<link>http://github.com/jasherai/overlay/tree/master</link>
+		<description>phatforge overlay</description>
+	</overlay>
+</layman>
