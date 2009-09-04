@@ -1,0 +1,12 @@
+# ChangeLog for net-im/bitlbee-skype
+# Copyright 1999-2009 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+*bitlbee-skype-0.7.2 (04 Sep 2009)
+
+  04 Sep 2009; Pritesh Mehta <pritesh@phatforge.com>
+  +bitlbee-skype-0.7.2.ebuild,
+  +files/bitlbee-1.2.2-fix_tests_check_set.patch, +files/bitlbeed.confd2,
+  +files/bitlbeed.initd, +metadata.xml:
+  Initial ebuild
+
