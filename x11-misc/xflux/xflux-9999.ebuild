@@ -16,11 +16,11 @@ IUSE=""
 
 DEPEND=""
 # This is an evil binary package
-RDEPEND="=x11-libs/libXau-1.0.4
-	=x11-libs/libXdmcp-1.0.2
-	=x11-libs/libX11-1.1.5
-	=x11-libs/libXext-1.0.4
-	=x11-libs/libXxf86vm-1.0.2"
+RDEPEND=">=x11-libs/libXau-1.0.4
+	>=x11-libs/libXdmcp-1.0.2
+	>=x11-libs/libX11-1.1.5
+	>=x11-libs/libXext-1.0.4
+	>=x11-libs/libXxf86vm-1.0.2"
 
 S="${WORKDIR}"
 
