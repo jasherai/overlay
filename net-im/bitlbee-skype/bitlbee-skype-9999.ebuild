@@ -4,19 +4,17 @@
 
 EAPI="2"
 inherit eutils toolchain-funcs confutils
-[ "${PV}" == "9999" ] && inherit git
+[ "${PV}" == "9999" ] && inherit git autotools
 
 DESCRIPTION="bitlbee plugin for skype"
 HOMEPAGE="http://vmiklos.hu/project/bitlbee-skype/"
 if [ "$PV" != "9999" ]; then
      	SRC_URI="http://vmiklos.hu/project/bitlbee-skype/${P}.tar.gz"
 else
-    	WANT_AUTOMAKE="1.9"
         SRC_URI=""
         EGIT_BRANCH="master"
 	EGIT_REPACK=true
         EGIT_REPO_URI="git://vmiklos.hu/bitlbee-skype"
-	S=${WORKDIR}/${PN}
 fi
 				
 
@@ -45,8 +43,9 @@ src_unpack() {
 src_prepare() {
         if [ "${PV}" != "9999" ]; then
 		default
-        else
-                emake autogen
+        else	
+	    	eautoconf
+#                emake autogen
         fi    
 }
 
