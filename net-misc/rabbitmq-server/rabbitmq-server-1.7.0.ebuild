@@ -7,11 +7,12 @@ inherit eutils
 DESCRIPTION="RabbitMQ is a high-performance AMQP-compliant message broker written in Erlang."
 HOMEPAGE="http://www.rabbitmq.com/"
 SRC_URI="http://www.rabbitmq.com/releases/rabbitmq-server/v${PV}/rabbitmq-server-${PV}.tar.gz"
+RESTRICT="primaryuri"
+
 LICENSE="MPL-1.1"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
-RESTRICT="primaryuri"
 
 # Q: is RDEPEND-only sufficient for a binary package, since we don't compile?
 DEPEND="dev-lang/erlang
